@@ -12,6 +12,7 @@ import KelimelerimVeAnaliz from './pages/KelimelerimVeAnaliz';
 import KonuAnalizRaporu from './pages/KonuAnalizRaporu';
 import AILearningPage from './pages/AILearningPage';
 import Dashboard from './pages/Dashboard';
+import ResetPasswordVerify from './pages/ResetPasswordVerify';
 import './App.css';
 import { AuthProvider } from './components/AuthContext';
 import PrivateRoute from './components/PrivateRoute';
@@ -34,6 +35,7 @@ function App() {
             <Route path="/konu-analiz-raporu" element={<PrivateRoute><KonuAnalizRaporu /></PrivateRoute>} />
             <Route path="/ai-learning" element={<PrivateRoute><AILearningPage /></PrivateRoute>} />
             <Route path="/dashboard" element={<PrivateRoute><Dashboard /></PrivateRoute>} />
+            <Route path="/reset-password/verify" element={<ResetPasswordVerify />} />
           </Routes>
         </div>
       </Router>
