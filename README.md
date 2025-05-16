@@ -5,7 +5,8 @@
 [![Build-passing](https://img.shields.io/badge/build-passing-brightgreen.svg)]()
 
   
-![Logo](https://i.hizliresim.com/hs4xb64.png)
+
+![6logo](https://github.com/user-attachments/assets/b286922f-c26a-456f-9ced-6d905d767892)
 
     
 # 6toLearn
