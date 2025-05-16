@@ -1,0 +1,38 @@
+.menu-btn-fixed {
+  position: fixed;
+  top: 24px;
+  right: 32px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  background: #f5f7fe;
+  padding: 8px 16px;
+  border-radius: 20px;
+  box-shadow: 0 2px 8px rgba(99,102,241,0.08);
+  font-size: 1.1rem;
+  font-weight: 500;
+  color: #3730a3;
+  z-index: 9999;
+  border: none;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+.menu-btn-fixed:hover {
+  background: #e9eafd;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(99,102,241,0.12);
+}
+.menu-btn-fixed:active {
+  transform: translateY(0);
+}
+.menu-btn-fixed i {
+  font-size: 1.3em;
+}
+@media (max-width: 600px) {
+  .menu-btn-fixed {
+    top: 10px;
+    right: 8px;
+    font-size: 1rem;
+    padding: 6px 12px;
+  }
+} 

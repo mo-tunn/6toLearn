@@ -1,0 +1,252 @@
+body {
+  background: linear-gradient(135deg, #f8fafc 0%, #e0e7ff 100%);
+}
+
+.dashboard-container {
+  max-width: 420px;
+  margin: 48px auto;
+  padding: 40px 32px 32px 32px;
+  background: #fff;
+  border-radius: 20px;
+  box-shadow: 0 4px 24px rgba(0,0,0,0.10);
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+}
+
+.dashboard-content {
+  width: 100%;
+  padding-top: 56px;
+}
+
+.dashboard-content h1 {
+  color: #3730a3;
+  margin-bottom: 24px;
+  font-size: 2.1rem;
+  font-weight: 800;
+  letter-spacing: 1px;
+}
+
+.dashboard-section {
+  background: #f5f7fe;
+  border-radius: 12px;
+  padding: 24px;
+  margin-bottom: 24px;
+  text-align: left;
+}
+
+.dashboard-section h2 {
+  color: #3730a3;
+  font-size: 1.4rem;
+  font-weight: 700;
+  margin-bottom: 16px;
+}
+
+.info-item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 12px;
+  padding: 12px;
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(99,102,241,0.08);
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.info-item .label {
+  color: #6366f1;
+  font-weight: 600;
+  min-width: 100px;
+  flex-shrink: 0;
+}
+
+.info-item .value {
+  color: #3730a3;
+  font-weight: 500;
+  flex: 1 1 auto;
+  word-break: break-all;
+}
+
+.verification-status {
+  display: inline-block;
+  margin-left: 8px;
+  font-size: 0.95rem;
+  padding: 4px 10px;
+  border-radius: 8px;
+  font-weight: 600;
+  box-sizing: border-box;
+}
+
+.verification-status.verified {
+  color: #15803d;
+  background: #dcfce7;
+}
+
+.verification-status.unverified {
+  color: #b91c1c;
+  background: #fee2e2;
+}
+
+.update-form {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.form-group label {
+  color: #6366f1;
+  font-weight: 600;
+  font-size: 1rem;
+}
+
+.form-group input {
+  padding: 12px;
+  border: 2px solid #e2e8f0;
+  border-radius: 8px;
+  font-size: 1rem;
+  transition: all 0.2s;
+  width: 100%;
+  box-sizing: border-box;
+  background: #fff;
+}
+
+.form-group input:focus {
+  border-color: #6366f1;
+  outline: none;
+  box-shadow: 0 0 0 3px rgba(99,102,241,0.1);
+}
+
+.update-button {
+  padding: 12px 24px;
+  border: none;
+  border-radius: 8px;
+  font-size: 1.1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s;
+  background: linear-gradient(90deg, #6366f1 0%, #818cf8 100%);
+  color: #fff;
+  box-shadow: 0 2px 8px rgba(99,102,241,0.08);
+}
+
+.update-button:hover {
+  background: linear-gradient(90deg, #7c3aed 0%, #6366f1 100%);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(99,102,241,0.12);
+}
+
+.update-button:active {
+  transform: translateY(0);
+}
+
+.dashboard-menu-btn {
+  position: fixed;
+  top: 24px;
+  right: 32px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  background: #f5f7fe;
+  padding: 8px 16px;
+  border-radius: 20px;
+  box-shadow: 0 2px 8px rgba(99,102,241,0.08);
+  font-size: 1.1rem;
+  font-weight: 500;
+  color: #3730a3;
+  z-index: 9999;
+  border: none;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.dashboard-menu-btn:hover {
+  background: #e9eafd;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(99,102,241,0.12);
+}
+
+.dashboard-menu-btn:active {
+  transform: translateY(0);
+}
+
+.dashboard-menu-btn i {
+  font-size: 1.3em;
+}
+
+.error-message {
+  background: #fee2e2;
+  color: #dc2626;
+  padding: 12px;
+  border-radius: 8px;
+  margin-bottom: 16px;
+  font-weight: 500;
+}
+
+.success-message {
+  background: #dcfce7;
+  color: #16a34a;
+  padding: 12px;
+  border-radius: 8px;
+  margin-bottom: 16px;
+  font-weight: 500;
+}
+
+@media (max-width: 600px) {
+  .dashboard-container {
+    padding: 18px 4px 12px 4px;
+    max-width: 98vw;
+  }
+  
+  .dashboard-content h1 {
+    font-size: 1.8rem;
+  }
+  
+  .dashboard-section {
+    padding: 16px;
+  }
+  
+  .dashboard-section h2 {
+    font-size: 1.2rem;
+  }
+  
+  .info-item {
+    padding: 8px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 4px;
+  }
+  
+  .info-item .label {
+    min-width: 80px;
+    font-size: 0.9rem;
+  }
+  
+  .form-group input {
+    padding: 10px;
+  }
+  
+  .update-button {
+    font-size: 1rem;
+    padding: 10px 20px;
+  }
+  
+  .dashboard-menu-btn {
+    top: 10px;
+    right: 8px;
+    font-size: 1rem;
+    padding: 6px 12px;
+  }
+  
+  .dashboard-content {
+    padding-top: 40px;
+  }
+} 

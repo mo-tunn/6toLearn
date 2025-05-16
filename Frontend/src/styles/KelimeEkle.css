@@ -1,0 +1,180 @@
+.kelimeekle-container {
+  min-height: 100vh;
+  background: linear-gradient(135deg, #f8fafc 0%, #e0e7ff 100%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  padding: 20px;
+}
+
+.kelimeekle-card {
+  background: #fff;
+  border-radius: 20px;
+  box-shadow: 0 8px 32px rgba(0,0,0,0.08);
+  padding: 40px 32px;
+  width: 100%;
+  max-width: 500px;
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+}
+
+.kelimeekle-card h2 {
+  margin-bottom: 32px;
+  color: #3730a3;
+  font-weight: 700;
+  text-align: center;
+  font-size: 1.8rem;
+  letter-spacing: 0.5px;
+}
+
+.form-row {
+  display: flex;
+  gap: 18px;
+  margin-bottom: 20px;
+}
+
+.form-col {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+.kelimeekle-card label {
+  margin-bottom: 6px;
+  font-weight: 600;
+  color: #4b5563;
+  font-size: 0.97rem;
+  letter-spacing: 0.2px;
+}
+
+.kelimeekle-card input {
+  padding: 12px 16px;
+  border: 2px solid #e5e7eb;
+  border-radius: 12px;
+  outline: none;
+  font-size: 1rem;
+  transition: all 0.2s;
+  background: #f9fafb;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.kelimeekle-card input:focus {
+  border-color: #6366f1;
+  background: #fff;
+  box-shadow: 0 0 0 4px rgba(99,102,241,0.1);
+}
+
+.kelimeekle-card button[type="submit"] {
+  margin-top: 24px;
+  background: linear-gradient(90deg, #6366f1 0%, #818cf8 100%);
+  color: #fff;
+  border: none;
+  border-radius: 12px;
+  padding: 18px 0;
+  font-size: 1.18rem;
+  font-weight: 600;
+  cursor: pointer;
+  box-shadow: 0 4px 12px rgba(99,102,241,0.15);
+  transition: all 0.2s;
+  letter-spacing: 0.5px;
+  width: 100%;
+}
+
+.kelimeekle-card button[type="submit"]:hover:not(:disabled) {
+  background: linear-gradient(90deg, #4f46e5 0%, #6366f1 100%);
+  box-shadow: 0 6px 16px rgba(99,102,241,0.2);
+  transform: translateY(-2px);
+}
+
+.kelimeekle-card button[type="submit"]:disabled {
+  opacity: 0.7;
+  cursor: not-allowed;
+  transform: none;
+}
+
+.kelimeekle-success {
+  margin-top: 20px;
+  color: #059669;
+  background: #d1fae5;
+  border: 1px solid #6ee7b7;
+  border-radius: 12px;
+  padding: 12px;
+  text-align: center;
+  font-weight: 500;
+  font-size: 0.95rem;
+}
+
+.kelimeekle-error {
+  margin-top: 20px;
+  color: #b91c1c;
+  background: #fee2e2;
+  border: 1px solid #fecaca;
+  border-radius: 12px;
+  padding: 12px;
+  text-align: center;
+  font-weight: 500;
+  font-size: 0.95rem;
+}
+
+.geri-don-btn {
+  position: absolute;
+  top: 32px;
+  right: 32px;
+  background: #f3f4f6;
+  color: #3730a3;
+  border: none;
+  border-radius: 12px;
+  padding: 10px 20px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  box-shadow: 0 4px 12px rgba(55,48,163,0.08);
+  transition: all 0.2s;
+  z-index: 10;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.geri-don-btn:hover {
+  background: #6366f1;
+  color: #fff;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 16px rgba(55,48,163,0.12);
+}
+
+@media (max-width: 600px) {
+  .kelimeekle-container {
+    padding: 12px;
+  }
+  
+  .kelimeekle-card {
+    padding: 32px 24px;
+    border-radius: 16px;
+  }
+  
+  .kelimeekle-card h2 {
+    font-size: 1.5rem;
+    margin-bottom: 24px;
+  }
+  
+  .geri-don-btn {
+    top: 16px;
+    right: 16px;
+    padding: 8px 16px;
+  }
+}
+
+@media (max-width: 700px) {
+  .form-row {
+    flex-direction: column;
+    gap: 0;
+  }
+} 
